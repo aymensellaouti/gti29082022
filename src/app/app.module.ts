@@ -9,6 +9,13 @@ import { ColorComponent } from './components/color/color.component';
 import { TwoComponent } from './components/two/two.component';
 import { FormsModule } from '@angular/forms';
 import { CardComponent } from './components/card/card.component';
+import { SommeComponent } from './components/somme/somme.component';
+import { PereComponent } from './components/pere/pere.component';
+import { FilsComponent } from './components/fils/fils.component';
+import { CvComponent } from './cv/cv/cv.component';
+import { ListComponent } from './cv/list/list.component';
+import { ItemComponent } from './cv/item/item.component';
+import { CvCardComponent } from './cv/cv-card/cv-card.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,14 @@ import { CardComponent } from './components/card/card.component';
     SecondComponent,
     ColorComponent,
     TwoComponent,
-    CardComponent
+    CardComponent,
+    SommeComponent,
+    PereComponent,
+    FilsComponent,
+    CvComponent,
+    ListComponent,
+    ItemComponent,
+    CvCardComponent
   ],
   imports: [
     BrowserModule,
