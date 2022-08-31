@@ -3,7 +3,7 @@
     <!-- appList(cvs) -->
     <div class="alert alert-warning">
       {{ now | date: "full" | uppercase }}
-<!--       <p>{{ 1 | btcUsd | currency }}</p>
+      <!--       <p>{{ 1 | btcUsd | currency }}</p>
       <p>{{ 1 | btcUsd: false }}</p> -->
     </div>
     <app-list (forwardCv)="getSelectedCv($event)" [cvs]="cvs"></app-list>
@@ -11,4 +11,7 @@
   <div class="col">
     <app-cv-card [cv]="selectedCv"></app-cv-card>
   </div>
+</div>
+<div class="row">
+  <app-embauche></app-embauche>
 </div>
