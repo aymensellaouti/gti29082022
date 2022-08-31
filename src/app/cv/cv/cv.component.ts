@@ -10,30 +10,14 @@ export class CvComponent implements OnInit {
   selectedCv: Cv | null = null;
   now = new Date();
   cvs: Cv[] = [
-    new Cv(
-      1,
-      'sellaouti',
-      'aymen',
-      'teacher',
-      'rotating_card_profile.png',
-      '1234',
-      40
-    ),
-    new Cv(
-      2,
-      'sellaouti',
-      'skan',
-      'bb',
-      'rotating_card_profile2.png',
-      '12345',
-      4
-    ),
+    new Cv(1, 'sellaouti', 'aymen', 'teacher', 'as.jpg', '1234', 40),
+    new Cv(2, 'sellaouti', 'skan', 'bb', '', '12345', 4),
     new Cv(
       3,
       'ben salah',
       'ahmed',
       'dev',
-      'rotating_card_profile3.png',
+      '                     ',
       '123456',
       20
     ),

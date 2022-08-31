@@ -22,6 +22,7 @@ import { NgClassExampleComponent } from './directives/ng-class-example/ng-class-
 import { HighlightDirective } from './directives/highlight.directive';
 import { RainbowDirective } from './directives/rainbow.directive';
 import { BtcUsdPipe } from './pipes/btc-usd.pipe';
+import { DefaultImagePipe } from './cv/pipes/default-image.pipe';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { BtcUsdPipe } from './pipes/btc-usd.pipe';
     NgClassExampleComponent,
     HighlightDirective,
     RainbowDirective,
-    BtcUsdPipe
+    BtcUsdPipe,
+    DefaultImagePipe
   ],
   imports: [
     BrowserModule,
