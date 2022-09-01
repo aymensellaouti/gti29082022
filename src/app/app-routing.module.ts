@@ -5,17 +5,19 @@ import { TodoComponent } from './todo/todo/todo.component';
 import { CvComponent } from './cv/cv/cv.component';
 import { MiniWordComponent } from './directives/mini-word/mini-word.component';
 import { ColorComponent } from './components/color/color.component';
+import { SecondComponent } from './components/second.component';
 
 const routes: Routes = [
-  {path: '', component: FirstComponent},
-  {path: 'todo', component: TodoComponent},
-  {path: 'cv', component: CvComponent},
-  {path: 'word', component: MiniWordComponent},
-  {path: 'color', component: ColorComponent},
+  { path: '', component: FirstComponent },
+  { path: 'todo', component: TodoComponent },
+  { path: 'cv', component: CvComponent },
+  { path: 'word', component: MiniWordComponent },
+  { path: 'color/:defaultColor/:name', component: ColorComponent },
+  { path: ':qqechose', component: SecondComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
