@@ -16,6 +16,9 @@ export class ColorComponent implements OnInit {
       this.defaultColor = mesParametres['defaultColor'];
       this.bgc = this.defaultColor;
     });
+    this.activatedRoute.queryParams.subscribe((qp) => {
+      console.log('qp : ', qp);
+    });
   }
   changeColor(newColor: string) {
     this.bgc = newColor;
