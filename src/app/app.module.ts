@@ -33,6 +33,8 @@ import { RouterSimulatorComponent } from './components/router-simulator/router-s
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { NF404Component } from './components/nf404/nf404.component';
 import { TestFormComponent } from './components/test-form/test-form.component';
+import { LoginComponent } from './components/login/login.component';
+import { TestObservableComponent } from './components/test-observable/test-observable.component';
 
 @NgModule({
   declarations: [
@@ -62,7 +64,9 @@ import { TestFormComponent } from './components/test-form/test-form.component';
     RouterSimulatorComponent,
     DetailCvComponent,
     NF404Component,
-    TestFormComponent
+    TestFormComponent,
+    LoginComponent,
+    TestObservableComponent
   ],
   imports: [
     BrowserModule,

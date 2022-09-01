@@ -8,6 +8,7 @@ import { ColorComponent } from './components/color/color.component';
 import { SecondComponent } from './components/second.component';
 import { DetailCvComponent } from './cv/detail-cv/detail-cv.component';
 import { NF404Component } from './components/nf404/nf404.component';
+import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
   { path: '', component: FirstComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
     ],
   },
   { path: 'word', component: MiniWordComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'color/:defaultColor', component: ColorComponent },
   { path: ':qqechose', component: SecondComponent },
   { path: '**', component: NF404Component },
