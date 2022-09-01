@@ -28,6 +28,8 @@ import { LoggerService } from './services/logger.service';
 import { TodoComponent } from './todo/todo/todo.component';
 import { ToastrModule } from 'ngx-toastr';
 import { EmbaucheComponent } from './cv/embauche/embauche.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterSimulatorComponent } from './components/router-simulator/router-simulator.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { EmbaucheComponent } from './cv/embauche/embauche.component';
     BtcUsdPipe,
     DefaultImagePipe,
     TodoComponent,
-    EmbaucheComponent
+    EmbaucheComponent,
+    NavbarComponent,
+    RouterSimulatorComponent
   ],
   imports: [
     BrowserModule,
