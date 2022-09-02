@@ -8,13 +8,13 @@ import { Cv } from './../model/cv';
 })
 export class ListComponent implements OnInit {
   @Input() cvs: Cv[] = [];
-  @Output() forwardCv = new EventEmitter<Cv>();
+/*   @Output() forwardCv = new EventEmitter<Cv>(); */
   constructor() {}
 
   ngOnInit(): void {}
-  onForwardCv(cv: Cv) {
+/*   onForwardCv(cv: Cv) {
     console.log(cv);
 
     this.forwardCv.emit(cv);
-  }
+  } */
 }
