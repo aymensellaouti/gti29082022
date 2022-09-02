@@ -3,6 +3,7 @@ import { Cv } from '../model/cv';
 import { CvService } from '../services/cv.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MES_ROUTES } from '../../config/routes.config';
+import { AuthService } from '../../auth/services/auth.service';
 
 @Component({
   selector: 'app-detail-cv',
@@ -14,7 +15,8 @@ export class DetailCvComponent implements OnInit {
   constructor(
     private cvService: CvService,
     private activatedRoute: ActivatedRoute,
-    private router: Router
+    private router: Router,
+    public authService: AuthService
   ) {}
 
   ngOnInit(): void {
