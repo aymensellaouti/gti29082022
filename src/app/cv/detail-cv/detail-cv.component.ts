@@ -31,8 +31,14 @@ export class DetailCvComponent implements OnInit {
   }
   delete() {
     if (this.cv) {
-      this.cvService.deleteCv(this.cv);
-      this.router.navigate([MES_ROUTES.cv]);
+      this.cvService.deleteCv(this.cv.id).subscribe({
+        next: (response) => {
+          this.router.navigate([MES_ROUTES.cv]);
+        },
+        error: (e) => {
+          console.log(e);
+        },
+      });
     }
   }
 }
