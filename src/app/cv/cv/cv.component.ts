@@ -26,7 +26,17 @@ export class CvComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.cvs = this.cvService.getCvs();
+    this.cvService.getCvs().subscribe({
+      next: (cvs) => {
+        this.cvs = cvs;
+      },
+      error: (e) => {
+        this.cvs = this.cvService.getFakeCvs();
+        this.toastr.error(
+          `Les données affichées sont fake, veuillez contacter l'admin`
+        );
+      },
+    });
     this.logger.log('cc je suis le CvComponent');
     this.sayHelloService.hello();
     this.toastr.info('Bienvenu dans notre CvTech :)');
