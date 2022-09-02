@@ -35,11 +35,8 @@ export class CvService {
   }
   deleteCv(id: number): Observable<any> {
     /*     const params = new HttpParams().set('access_token',localStorage.getItem('token') ?? ''); */
-    const headers = new HttpHeaders().set(
-      'Authorization',
-      localStorage.getItem('token') ?? ''
-    );
-    return this.http.delete<any>(API.cv + id, { headers });
+
+    return this.http.delete<any>(API.cv + id);
   }
   findFakeCvById(id: number): Cv | null {
     return this.cvs.find((cv) => cv.id == id) ?? null;

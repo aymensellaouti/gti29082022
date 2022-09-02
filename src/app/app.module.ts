@@ -39,6 +39,7 @@ import { TestObservableComponent } from './components/test-observable/test-obser
 import { SliderComponent } from './components/slider/slider.component';
 import { TestHttpComponent } from './components/test-http/test-http.component';
 import { AddCvComponent } from './cv/add-cv/add-cv.component';
+import { AuthInterceptorProvider } from './auth/interceptors/auth.interceptor';
 
 @NgModule({
   declarations: [
@@ -83,7 +84,7 @@ import { AddCvComponent } from './cv/add-cv/add-cv.component';
     ToastrModule.forRoot(), // ToastrModule added
     HttpClientModule
   ],
-  providers: [],
+  providers: [AuthInterceptorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
